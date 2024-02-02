@@ -29,10 +29,10 @@
 from setuptools import setup
 from os import getenv, path, walk
 
-SKILL_NAME = ""  # TODO: Name skill like "skill-my_awesome_skill"
+SKILL_NAME = "skill-new-skill"  # TODO: Name skill like "skill-my_awesome_skill"
 SKILL_PKG = SKILL_NAME.replace('-', '_')
 # skill_id=package_name:SkillClass
-PLUGIN_ENTRY_POINT = f'{SKILL_NAME}.neongeckocom={SKILL_PKG}:NewSkill'  # TODO: Update "NewSkill" to match skill class
+PLUGIN_ENTRY_POINT = f'{SKILL_NAME}.neongeckocom={SKILL_PKG}:NewSkill'
 BASE_PATH = path.abspath(path.dirname(__file__))
 
 
@@ -75,6 +75,7 @@ def find_resource_files():
 with open(path.join(BASE_PATH, "README.md"), "r") as f:
     long_description = f.read()
 
+version = "0.0.0"
 with open(path.join(BASE_PATH, "version.py"), "r", encoding="utf-8") as v:
     for line in v.readlines():
         if line.startswith("__version__"):
@@ -92,11 +93,11 @@ with open(path.join(BASE_PATH, "version.py"), "r", encoding="utf-8") as v:
 setup(
     name=f"neon-{SKILL_NAME}",
     version=version,
-    url=f'https://github.com/NeonGeckoCom/{SKILL_NAME}',
-    license='BSD-3-Clause',  # TODO: Make sure this matches `LICENSE.md`
+    url=f'https://github.com/mikejgray/{SKILL_NAME}',
+    license='BSD-3-Clause',
     install_requires=get_requirements("requirements.txt"),
-    author='Neongecko',
-    author_email='developers@neon.ai',
+    author='mikejgray',
+    author_email='mike@graywind.org',
     long_description=long_description,
     long_description_content_type="text/markdown",
     package_dir={SKILL_PKG: ""},

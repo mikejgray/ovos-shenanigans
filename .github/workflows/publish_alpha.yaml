@@ -1,0 +1,18 @@
+# This workflow will generate a distribution and upload it to PyPI
+
+name: Publish Alpha Release
+on:
+  workflow_dispatch:
+
+jobs:
+  publish-alpha-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: openvoiceos/.github/.github/workflows/publish_alpha_release.yml@feat/shared_actions1
+        with:
+          branch: dev
+          action_branch: feat/shared_actions1
+          python_version: "3.10"
+          version_file: version.py
+          locale_folder: locale
+          changelog_file: CHANGELOG.md

@@ -1,0 +1,17 @@
+name: Run Install Tests
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  install-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: openvoiceos/.github/.github/workflows/skill_test_installation.yml@feat/shared_actions1
+        with:
+          action_branch: feat/shared_actions1
+          python_matrix: '["3.10"]'
+          system_deps: yq
+          pip_packages: pytest-cov
+          skill_id: newskill
+          skill_location: ""
