@@ -84,14 +84,8 @@ with open(path.join(BASE_PATH, "version.py"), "r", encoding="utf-8") as v:
             else:
                 version = line.split("'")[1]
 
-# TODO: Update the setup parameters:
-#   name: what is published to PyPI to install, usually the same as the skill name
-#   url: The URL for PyPI to include in the package listing, usually a git repository
-#   license: License identifier for the contents of LICENSE.md
-#   author: Name of the skill author, generally a GitHub username
-#   author_email: Email that is listed publicly on PyPI
 setup(
-    name=f"neon-{SKILL_NAME}",
+    name=f"{SKILL_NAME}",
     version=version,
     url=f'https://github.com/mikejgray/{SKILL_NAME}',
     license='BSD-3-Clause',

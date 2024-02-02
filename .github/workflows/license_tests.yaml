@@ -12,5 +12,5 @@ jobs:
       system-deps: jq
       licenses-exclude: AGPL-3.0
       package-extras: test
-      python-version: "3.11"
+      python-version: "3.10"
       packages-exclude: ovos-workshop
