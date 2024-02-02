@@ -4,12 +4,10 @@ on:
 
 jobs:
   publish-semver-release:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: openvoiceos/.github/.github/workflows/publish_semver_release.yml@feat/shared_actions1
-        with:
-          secrets: inherit
-          action_branch: feat/shared_actions1
-          release_type: testing # patch|stable also
-          python_version: "3.10"
-          changelog_file: CHANGELOG.md
+    uses: openvoiceos/.github/.github/workflows/publish_semver_release.yml@feat/shared_actions1
+    secrets: inherit
+    with:
+      action_branch: feat/shared_actions1
+      release_type: testing # patch|stable also
+      python_version: "3.10"
+      changelog_file: CHANGELOG.md

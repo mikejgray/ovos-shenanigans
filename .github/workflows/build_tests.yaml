@@ -5,13 +5,11 @@ on:
 
 jobs:
   build-tests:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: openvoiceos/.github/.github/workflows/python_build_tests.yml@feat/shared_actions1
-        with:
-          python_matrix: '[3.8, 3.9, "3.10", "3.11", "3.12"]'
-          test_manifest: false # Should also test true
-          # manifest_ignored:
-          test_pipaudit: true # Should also test false
-          test_relative_paths: true # Should also test false
-          pipaudit_ignored: "GHSA-r9hx-vwmv-q579 PYSEC-2022-43012"
+    uses: openvoiceos/.github/.github/workflows/python_build_tests.yml@feat/shared_actions1
+    with:
+      python_matrix: '[3.8, 3.9, "3.10", "3.11", "3.12"]'
+      test_manifest: false # Should also test true
+      # manifest_ignored:
+      test_pipaudit: true # Should also test false
+      test_relative_paths: true # Should also test false
+      pipaudit_ignored: "GHSA-r9hx-vwmv-q579 PYSEC-2022-43012"

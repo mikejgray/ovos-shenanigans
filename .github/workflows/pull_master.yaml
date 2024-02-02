@@ -4,13 +4,11 @@ on:
 
 jobs:
   pull-master:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: openvoiceos/.github/.github/workflows/pull_master.yml@feat/shared_actions1
-        with:
-          pr_reviewer: ChanceEncounter
-          pr_assignee: JarbasAl
-          source_branch: testing
-          pr_title: Stable release from release candidate on testing branch
-          pr_body: Probably not, but in some cases this could be nice to populate
-          pr_draft: false
+    uses: openvoiceos/.github/.github/workflows/pull_master.yml@feat/shared_actions1
+    with:
+      pr_reviewer: ChanceEncounter
+      pr_assignee: JarbasAl
+      source_branch: testing
+      pr_title: Stable release from release candidate on testing branch
+      pr_body: Probably not, but in some cases this could be nice to populate
+      pr_draft: false
