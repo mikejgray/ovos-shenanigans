@@ -1,4 +1,4 @@
-ovos-workshop==0.0.16a12
+ovos-workshop==0.0.16a4
 ovos-utils==0.0.38
-ovos-plugin-manager==0.0.26a5
+ovos-plugin-manager==0.0.26a4
 mock
