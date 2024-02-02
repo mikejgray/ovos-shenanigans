@@ -1,4 +1,4 @@
 ovos-workshop
-ovos-utils
+ovos-utils==0.0.38
 ovos-plugin-manager
 mock

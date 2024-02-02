@@ -37,3 +37,5 @@ https://github.com/mikejgray/ovos-shenanigans/actions/runs/7751041955/job/211382
 https://github.com/mikejgray/ovos-shenanigans/actions/runs/7751041950/job/21138252429?pr=1 - check-manifest: error: unrecognized arguments: test/test_skill.py
 
 https://github.com/mikejgray/ovos-shenanigans/actions/runs/7751041950/job/21138252675?pr=1 - additional packages
+
+https://github.com/mikejgray/ovos-shenanigans/actions/runs/7751079482/job/21138351255?pr=1 - can't find ovos_utils

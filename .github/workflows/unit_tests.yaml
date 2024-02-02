@@ -17,10 +17,7 @@ jobs:
       timeout_minutes: 1 # Test multiple
       test_location: test
       is_skill: true
-      codecov: true
-      append_coverage: true
-      upload_coverage: true
-  unit-tests-longer-timeout:
+  unit-tests-with-codecov:
     uses: openvoiceos/.github/.github/workflows/pytest_file_or_dir.yml@feat/shared_actions1
     with:
       # runner:
