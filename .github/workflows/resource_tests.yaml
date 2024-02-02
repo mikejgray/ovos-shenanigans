@@ -20,4 +20,4 @@ jobs:
       system_deps: jq
       pip_packages: pytest-cov
       skill_id: newskill
-      resource_testfile: jest/test_resources.yaml
+      resource_testfile: test/test_resources.yaml

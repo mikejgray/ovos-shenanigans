@@ -38,4 +38,4 @@ https://github.com/mikejgray/ovos-shenanigans/actions/runs/7751041950/job/211382
 
 https://github.com/mikejgray/ovos-shenanigans/actions/runs/7751041950/job/21138252675?pr=1 - additional packages
 
-https://github.com/mikejgray/ovos-shenanigans/actions/runs/7751079482/job/21138351255?pr=1 - can't find ovos_utils
+https://github.com/mikejgray/ovos-shenanigans/actions/runs/7751079482/job/21138351255?pr=1 - can't find ovos_utils. It appears ovos-utils 0.1.0 breaks a lot of the test workflows
