@@ -1,2 +1,4 @@
 ovos-workshop
 ovos-utils
+ovos-plugin-manager
+mock
