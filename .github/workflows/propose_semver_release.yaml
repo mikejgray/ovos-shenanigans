@@ -1,0 +1,13 @@
+name: Rebase dev after SemVer bump
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [closed]
+    branches:
+      - dev
+
+jobs:
+  Rebase-testing-onto-dev:
+    uses: openvoiceos/.github/.github/workflows/propose_semver_release_merged.yml@feat/shared_actions1
+    with:
+      release_type: testing # stable|patch also
